@@ -1,2 +1,6 @@
 export const ACCESS_TOKEN = "BODY_TIMES_ACCESS_TOKEN" as const;
 export const REFRESH_TOKEN = "BODY_TIMES_REFRESH_TOKEN" as const;
+
+export const TOKEN_EXPIRED_MESSAGE = "TOKEN_EXPIRED";
+export const TOKEN_EMPTY_MESSAGE = "TOKEN_EMPTY";
+export const UNAUTHORIZED_STATUS = 401;

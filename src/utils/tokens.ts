@@ -1,4 +1,5 @@
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "@/common/constants/tokens";
+import { Nullable } from "@/common/types/nullable";
 import { Token } from "@/common/types/tokens";
 
 export const setTokens = (tokens: Token) => {
@@ -25,4 +26,11 @@ export const getRefreshToken = () => {
 export const removeTokens = () => {
   localStorage.removeItem(ACCESS_TOKEN);
   localStorage.removeItem(REFRESH_TOKEN);
+};
+
+export const getTokens = (): Nullable<Token> => {
+  return {
+    accessToken: getAccessToken(),
+    refreshToken: getRefreshToken(),
+  };
 };
