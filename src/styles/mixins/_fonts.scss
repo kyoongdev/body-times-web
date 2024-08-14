@@ -13,6 +13,12 @@ $FONT_WEIGHT_MAP: (
   @return map-get($FONT_WEIGHT_MAP, $key);
 }
 
+@mixin fontTitle($fw) {
+  font-size: 40px;
+  font-weight: _getFontWeightValue($fw);
+  line-height: 1.3em;
+}
+
 @mixin fontH1($fw) {
   font-size: 32px;
   font-weight: _getFontWeightValue($fw);

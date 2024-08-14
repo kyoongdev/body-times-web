@@ -7,3 +7,4 @@ export { default as PhoneIcon } from "./phone.svg";
 export { default as SchoolIcon } from "./school.svg";
 export { default as DateIcon } from "./date.svg";
 export { default as UserIcon } from "./user.svg";
+export { default as KakaoIcon } from "./kakao.svg";

@@ -1,3 +1,5 @@
+import Provider from "./provider";
+
 import styles from "./layout.module.scss";
 
 import "@/styles/global.scss";
@@ -11,7 +13,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <div className={styles.wrapper}>{children}</div>
+        <Provider>
+          <div className={styles.wrapper}>{children}</div>
+        </Provider>
       </body>
     </html>
   );

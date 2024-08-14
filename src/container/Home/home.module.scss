@@ -1,0 +1,13 @@
+@use "src/styles/constants" as c;
+@use "src/styles/mixins" as m;
+
+.wrapper {
+  @include m.flex(center, center, column);
+  row-gap: 120px;
+  min-height: 100dvh;
+
+  .title {
+    @include m.fontTitle(bold);
+    color: c.$C_WHITE;
+  }
+}
