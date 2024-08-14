@@ -7,5 +7,9 @@
   max-width: c.$S_CONTENT_WIDTH;
   min-height: 100dvh;
   margin: 0 auto;
-  background-color: c.$C_PRIMARY;
+  background-color: c.$C_WHITE;
+
+  &.isHome {
+    background-color: c.$C_PRIMARY;
+  }
 }
