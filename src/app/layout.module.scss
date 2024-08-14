@@ -1,0 +1,11 @@
+@use "src/styles/constants" as c;
+@use "src/styles/mixins" as m;
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: c.$S_CONTENT_WIDTH;
+  min-height: 100dvh;
+  margin: 0 auto;
+  background-color: c.$C_PRIMARY;
+}
