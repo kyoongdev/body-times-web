@@ -1,0 +1,41 @@
+@use "src/styles/constants" as c;
+@use "src/styles/mixins" as m;
+
+.wrapper {
+  padding: 12px;
+
+  .title {
+    @include m.flex(space-between, center, row);
+    @include m.fontB18(bold);
+    cursor: pointer;
+
+    .chevron {
+      transition: transform 0.3s ease-in-out;
+
+      &.isOpen {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .content {
+    max-height: 0;
+    padding: 0 8px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition:
+      max-height 0.3s ease-in-out,
+      visibility 0.3s ease-in-out,
+      opacity 0.3s ease-in-out,
+      padding-top 0.3s ease-in-out,
+      padding-bottom 0.3s ease-in-out;
+
+    &.isOpen {
+      max-height: 200px;
+      padding: 8px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

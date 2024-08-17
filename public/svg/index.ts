@@ -8,3 +8,4 @@ export { default as SchoolIcon } from "./school.svg";
 export { default as DateIcon } from "./date.svg";
 export { default as UserIcon } from "./user.svg";
 export { default as KakaoIcon } from "./kakao.svg";
+export { default as ChevronDownIcon } from "./chevron-down.svg";
