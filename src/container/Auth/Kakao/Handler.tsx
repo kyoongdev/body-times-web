@@ -17,6 +17,7 @@ const Handler: React.FC = () => {
 
     if (accessToken && refreshToken) {
       setTokens({ accessToken, refreshToken });
+      router.replace("/main");
     } else router.replace("/auth/failed");
   }, [searchParams, router]);
 

@@ -2,5 +2,20 @@
 @use "src/styles/mixins" as m;
 
 .wrapper {
-  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 10%);
+  padding: 16px 12px;
+  border-radius: 8px;
+  box-shadow: c.$C_SHADOW;
+
+  .calories {
+    @include m.flex(flex-start, center, row);
+    column-gap: 20px;
+
+    > h2 {
+      @include m.fontB16(bold);
+    }
+  }
+
+  .calories + .calories {
+    margin-top: 12px;
+  }
 }

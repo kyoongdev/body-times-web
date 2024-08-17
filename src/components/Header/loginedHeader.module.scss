@@ -3,4 +3,11 @@
 
 .wrapper {
   @include m.flex(center, center, row);
+  padding: 12px;
+  background-color: c.$C_PRIMARY;
+
+  > h1 {
+    @include m.fontH1("black");
+    color: c.$C_WHITE;
+  }
 }

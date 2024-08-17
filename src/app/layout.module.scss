@@ -11,5 +11,14 @@
 
   &.isHome {
     background-color: c.$C_PRIMARY;
+    opacity: 1;
+  }
+}
+
+.body {
+  background-color: c.$C_PRIMARY_LIGHT;
+
+  &.isHome {
+    background-color: c.$C_WHITE;
   }
 }
