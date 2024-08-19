@@ -18,4 +18,19 @@
   .calories + .calories {
     margin-top: 12px;
   }
+
+  .moreInfo {
+    margin-top: 12px;
+
+    .contents {
+      > li {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+
+        > p:first-of-type {
+          @include m.fontB16(bold);
+        }
+      }
+    }
+  }
 }

@@ -30,6 +30,7 @@
     "axios": "^1.7.2",
     "clsx": "^2.1.1",
     "cross-env": "^7.0.3",
+    "dayjs": "^1.11.12",
     "env-cmd": "^10.1.0",
     "eslint": "^8.46.0",
     "eslint-config-next": "13.4.13",

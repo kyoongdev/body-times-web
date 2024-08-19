@@ -5,14 +5,14 @@ export interface Meal {
   food: Food;
   year: number;
   month: number;
-  day: number;
+  date: number;
   grams: number;
 }
 
 export interface UpdateMeal {
   year: number;
   month: number;
-  day: number;
+  date: number;
   grams: number;
 }
 
@@ -20,6 +20,12 @@ export interface CreateMeal {
   foodId: string;
   year: number;
   month: number;
-  day: number;
+  date: number;
   grams: number;
+}
+
+export interface FindMyMealsQuery {
+  year: number;
+  month: number;
+  date: number;
 }
