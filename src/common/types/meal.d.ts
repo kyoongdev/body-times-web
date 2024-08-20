@@ -1,27 +1,38 @@
 import { Food } from "./food";
 
-export interface Meal {
+export interface MealFood {
   id: string;
   food: Food;
+  grams: number;
+}
+
+export interface Meal {
+  id: string;
+  foods: MealFood[];
   year: number;
   month: number;
   date: number;
-  grams: number;
+  name: string;
 }
 
 export interface UpdateMeal {
   year: number;
   month: number;
   date: number;
+  name: string;
+}
+
+export interface CreateMealFood {
+  foodId: string;
   grams: number;
 }
 
 export interface CreateMeal {
-  foodId: string;
+  foods: CreateMealFood[];
   year: number;
   month: number;
   date: number;
-  grams: number;
+  name: string;
 }
 
 export interface FindMyMealsQuery {
